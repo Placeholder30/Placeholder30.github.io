@@ -225,6 +225,13 @@ div.bottom div.icon div {
     grid-template-columns: 1fr;
   }
 
+  .dashboard-header {
+    font-size: 0.8rem;
+  }
+  .overview {
+    font-size: 0.8rem;
+  }
+
   .bottom-container {
     grid-template-columns: 1fr;
   }
