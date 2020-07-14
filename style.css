@@ -8,6 +8,11 @@ body {
   background-color: hsl(0, 0%, 100%);
 }
 
+body.dark {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(230, 17%, 14%);
+}
+
 .container {
   width: 85vw;
   max-width: 1440px;
@@ -20,6 +25,9 @@ body {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
+.dashboard-header.dark {
+  color: hsl(0, 0%, 100%);
+}
 
 .top-container {
   display: grid;
@@ -31,6 +39,11 @@ body {
   background-color: hsl(227, 47%, 96%);
   padding: 1rem 2rem;
   border-radius: 5%;
+}
+
+.grid.dark {
+  background-color: hsl(228, 28%, 20%);
+  color: hsl(0, 0%, 100%);
 }
 
 .grid:hover {
@@ -97,6 +110,9 @@ body {
   margin: 2em 0;
   font-size: 1rem;
 }
+.overview.dark {
+  color: hsl(0, 0%, 100%);
+}
 
 .bottom-container {
   display: grid;
@@ -109,6 +125,12 @@ body {
   padding: 1.5rem 1.5rem;
   border-radius: 5%;
 }
+
+.main-grid.dark {
+  background-color: hsl(228, 28%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+
 .main-grid:hover {
   opacity: 0.5;
   cursor: pointer;
