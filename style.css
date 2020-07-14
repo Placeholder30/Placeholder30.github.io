@@ -5,7 +5,7 @@
 
 .square {
   position: relative;
-  width: 50px;
+  width: 40px;
   height: 20px;
   background-color: black;
   border-radius: 12px;
@@ -20,7 +20,7 @@
   transition: all 400ms ease-in-out;
 }
 .active {
-  margin-left: 30px;
+  margin-left: 20px;
   background-color: hsl(230, 17%, 14%);
 }
 
