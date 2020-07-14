@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Inter", sans-serif;
-  font-size: 62.5%;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -31,6 +31,11 @@ body {
   background-color: hsl(227, 47%, 96%);
   padding: 1rem 2rem;
   border-radius: 5%;
+}
+
+.grid:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .grid > div {
@@ -96,4 +101,88 @@ body {
 .bottom-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.main-grid {
+  background-color: hsl(227, 47%, 96%);
+  padding: 1.5rem 1.5rem;
+  border-radius: 5%;
+}
+.main-grid:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.count-bottom {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.icon {
+  margin-right: 0.6rem;
+}
+
+.red {
+  color: hsl(356, 69%, 56%);
+}
+.green {
+  color: hsl(163, 72%, 41%);
+}
+div.bottom div.icon {
+  display: flex;
+  align-items: flex-end;
+}
+
+div.bottom div.icon svg {
+  margin-bottom: 0.2rem;
+  margin-right: 0.6rem;
+}
+
+div.bottom div.icon div {
+  font-size: 0.8rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 950px) {
+  .top-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bottom-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-container {
+    grid-template-columns: 1fr;
+  }
 }
